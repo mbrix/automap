@@ -1,0 +1,13 @@
+This uses Erlang's AST to dynamically compile a map into a static module
+
+automap:init(my_new_module, #{blah => 2}).
+
+automap:map(my_new_module).
+#{blah => 2}
+
+my_new_module:get_map().
+#{blah => 2}
+
+
+It can be used to provide global config state
+but generally you should never do this :)

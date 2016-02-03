@@ -1,0 +1,9 @@
+{application, automap,
+ [
+  {description, "Dynamically compile maps into globally namespaced modules"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {mod, { automap, []}},
+  {env, []}
+ ]}.
